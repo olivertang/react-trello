@@ -22,7 +22,7 @@ injectGlobal`
 `
 
 export const BoardDiv = styled.div`
-  background-color: #23719f;
+  background-color: red;
   overflow-y: hidden;
   padding: 5px;
   color: #393939;
