@@ -22,9 +22,9 @@ export default class Board extends Component {
 
   render() {
     return (
-      <Provider store={this.store}>
-        <BoardContainer {...this.props} id={this.id}/>
-      </Provider>
+      <div>
+        hello board.js
+      </div> 
     )
   }
 }
