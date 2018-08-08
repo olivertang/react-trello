@@ -23,7 +23,7 @@ injectGlobal`
 
 export const BoardDiv = styled.div`
   background-color: #23719f;
-  overflow-y: hidden;
+  overflow: visible;
   padding: 5px;
   color: #393939;
   display: flex;
@@ -68,7 +68,7 @@ export const LaneFooter = styled.div`
 
 export const ScrollableLane = styled.div`
 	flex: 1;
-	overflow-y: auto;
+	overflow: visible;  
 	min-width: 250px;
 	overflow-x: hidden;
 	align-self: center;
