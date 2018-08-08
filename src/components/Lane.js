@@ -101,13 +101,6 @@ class Lane extends Component {
     const {addCardLink} = this.props
     const {addCardClicked} = this.props
     const laneId = this.props.id
-
-    console.log ("render add card link is called from react-trello")
-    console.log ('lane id is: ' + laneId) 
-
-    console.log ("properties are: ")
-    console.log (this.props)
-
     addCardClicked && addCardClicked(laneId)
 
     if (addCardLink) {

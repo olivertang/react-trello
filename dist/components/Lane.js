@@ -150,13 +150,6 @@ var Lane = function (_Component) {
       var addCardClicked = _this.props.addCardClicked;
 
       var laneId = _this.props.id;
-
-      console.log("render add card link is called from react-trello");
-      console.log('lane id is: ' + laneId);
-
-      console.log("properties are: ");
-      console.log(_this.props);
-
       addCardClicked && addCardClicked(laneId);
 
       if (addCardLink) {
