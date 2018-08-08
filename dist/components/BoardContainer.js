@@ -181,7 +181,7 @@ var BoardContainer = function (_Component) {
           otherProps = (0, _objectWithoutProperties3.default)(_props3, ['id', 'reducerData', 'draggable', 'laneDraggable', 'laneDragClass', 'style']);
       // Stick to whitelisting attributes to segregate board and lane props
 
-      var passthroughProps = (0, _pick2.default)(this.props, ['onLaneScroll', 'onCardClick', 'onCardDelete', 'onCardAdd', 'onLaneClick', 'addCardLink', 'laneSortFunction', 'draggable', 'cardDraggable', 'collapsibleLanes', 'editable', 'hideCardDeleteIcon', 'customCardLayout', 'newCardTemplate', 'customLaneHeader', 'tagStyle', 'handleDragStart', 'handleDragEnd', 'cardDragClass', 'children']);
+      var passthroughProps = (0, _pick2.default)(this.props, ['onLaneScroll', 'onCardClick', 'onCardDelete', 'onCardAdd', 'onLaneClick', 'addCardLink', 'addCardClicked', 'laneSortFunction', 'draggable', 'cardDraggable', 'collapsibleLanes', 'editable', 'hideCardDeleteIcon', 'customCardLayout', 'newCardTemplate', 'customLaneHeader', 'tagStyle', 'handleDragStart', 'handleDragEnd', 'cardDragClass', 'children']);
 
       return _react2.default.createElement(
         _Base.BoardDiv,

@@ -87,6 +87,7 @@ class BoardContainer extends Component {
       'onCardAdd',
       'onLaneClick',
       'addCardLink',
+      'addCardClicked',
       'laneSortFunction',
       'draggable',
       'cardDraggable',

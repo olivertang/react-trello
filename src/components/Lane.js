@@ -99,6 +99,9 @@ class Lane extends Component {
 
   renderAddCardLink = () => {
     const {addCardLink} = this.props
+    const {addCardClicked} = this.props
+    addCardClicked && addCardClicked()
+    
     if (addCardLink) {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
