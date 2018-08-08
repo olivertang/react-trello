@@ -147,10 +147,6 @@ var Lane = function (_Component) {
       _this.props.onCardAdd(card, laneId);
     }, _this.renderAddCardLink = function () {
       var addCardLink = _this.props.addCardLink;
-      var addCardClicked = _this.props.addCardClicked;
-
-      var laneId = _this.props.id;
-      addCardClicked && addCardClicked(laneId);
 
       if (addCardLink) {
         return _react2.default.createElement(
@@ -167,6 +163,10 @@ var Lane = function (_Component) {
       }
     }, _this.renderNewCard = function () {
       var newCardTemplate = _this.props.newCardTemplate;
+      var addCardClicked = _this.props.addCardClicked;
+
+      var laneId = _this.props.id;
+      addCardClicked && addCardClicked(laneId);
 
       if (newCardTemplate) {
         var newCardWithProps = _react2.default.cloneElement(newCardTemplate, {

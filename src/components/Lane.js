@@ -99,10 +99,6 @@ class Lane extends Component {
 
   renderAddCardLink = () => {
     const {addCardLink} = this.props
-    const {addCardClicked} = this.props
-    const laneId = this.props.id
-    addCardClicked && addCardClicked(laneId)
-
     if (addCardLink) {
       return <span onClick={this.showEditableCard}>{addCardLink}</span>
     } else {
@@ -112,6 +108,11 @@ class Lane extends Component {
 
   renderNewCard = () => {
     const {newCardTemplate} = this.props
+
+    const {addCardClicked} = this.props
+    const laneId = this.props.id
+    addCardClicked && addCardClicked(laneId)
+
     if (newCardTemplate) {
       const newCardWithProps = React.cloneElement(newCardTemplate, {
         onCancel: this.hideEditableCard,
