@@ -52,9 +52,13 @@ var _v = require('uuid/v1');
 
 var _v2 = _interopRequireDefault(_v);
 
+var _reduxThunk = require('redux-thunk');
+
+var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var middlewares = process.env.NODE_ENV === 'development' ? [_reduxLogger2.default] : [];
+var middlewares = process.env.NODE_ENV === 'development' ? [_reduxLogger2.default, _reduxThunk2.default] : [_reduxThunk2.default];
 
 var Board = function (_Component) {
   (0, _inherits3.default)(Board, _Component);

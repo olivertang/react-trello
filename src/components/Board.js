@@ -5,8 +5,9 @@ import {createStore, applyMiddleware} from 'redux'
 import boardReducer from '../reducers/BoardReducer'
 import logger from 'redux-logger'
 import uuidv1 from "uuid/v1"
+import thunk from 'redux-thunk'; 
 
-const middlewares = process.env.NODE_ENV === 'development' ? [logger] : []
+const middlewares = process.env.NODE_ENV === 'development' ? [logger, thunk] : [thunk]
 
 export default class Board extends Component {
   constructor() {
