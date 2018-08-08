@@ -149,7 +149,8 @@ var Lane = function (_Component) {
       var addCardLink = _this.props.addCardLink;
       var addCardClicked = _this.props.addCardClicked;
 
-      addCardClicked && addCardClicked();
+      var laneId = _this.props.id;
+      addCardClicked && addCardClicked(laneId);
 
       if (addCardLink) {
         return _react2.default.createElement(
