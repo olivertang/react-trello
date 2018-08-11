@@ -107,7 +107,7 @@ export const CardWrapper = styled.article`
 
 export const MovableCardWrapper = styled(CardWrapper)`
   &:hover {
-    background-color: #f0f0f0;
+    background-color: #ff7979;
   }
 `
 
