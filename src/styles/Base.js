@@ -95,7 +95,6 @@ export const RightContent = styled.span`
 `
 export const CardWrapper = styled.article`
   border-radius: 3px;
-  border-bottom: 1px solid #ccc;
   background-color: #fff;
   position: relative;
   padding: 10px;
