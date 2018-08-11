@@ -182,7 +182,7 @@ class Lane extends Component {
         />
       )
       return draggable && cardDraggable ? (
-        <Draggable key={card.id}>{cardToRender} dropClass={{width: '30px', height: '30px', background: '#ab3fdd', backgroundColor: '#ab3fdd'}}</Draggable>
+        <Draggable key={card.id}>{cardToRender}</Draggable>
       ) : (
         <span key={card.id}>{cardToRender}</span>
       )
