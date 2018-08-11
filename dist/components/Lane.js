@@ -240,7 +240,9 @@ var Lane = function (_Component) {
         return draggable && cardDraggable ? _react2.default.createElement(
           _reactSmoothDnd.Draggable,
           { key: card.id },
-          cardToRender
+          cardToRender,
+          ' dropClass=',
+          { width: '30px', height: '30px', background: '#ab3fdd', backgroundColor: '#ab3fdd' }
         ) : _react2.default.createElement(
           'span',
           { key: card.id },
